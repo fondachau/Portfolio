@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #98B4B8;
+  font-family: Helvetica, sans-serif;
+}
+#main-header{
+			text-align:center;
+			color:white;
+			padding:10px;
+		}
+#main-header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#main-header li {
+  float: left;
+}
+
+#main-header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#main-header li a:hover {
+    color: grey;
+}
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+.collapsible {
+  background-color: #888;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+.information {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+</style>
+</head>
+<body>
+	<div class="hero-image">
+		<div id="main-header"><ul>
+  <li><a href="homepage.html">Home</a></li>
+  <li><a href="jobs.html">Work Experience</a></li>
+  <li><a href="timeline.html">Projects</a></li>
+  <li><a href="Fonda Chau Resume.pdf"target="_blank">Resume</a></li>
+</ul>
+</div>
+
+<div class="timeline">
+
+
+
+	<div class="container left">
+    <div class="content">
+    	<button class="collapsible">
+    		<h2>NON-CONTACT MEASUREMENT OF VITAL SIGNS</h2>
+    		<a href="Projects/NonContactVitalSigns/NoncontactvitalsignsWithUI.PNG">
+    			<img src="Projects/NonContactVitalSigns/NoncontactvitalsignsWithUI.PNG" alt="Image of non contact mothed of measuring vital signs" height="80" align="right">
+    		</a>
+    		<p>May 2019</p>
+    	</button>
+    	<div class="information">
+  			<p>A system involving a FMCW Radio, Video Camera, Infrared Camera to measure Respiratory Rate, Heart Rate and Body temperature.
+			System targeted to be placed in hospital waiting rooms with possible application to other settings.
+			Developed detecting respiratory rate and heart rate by detecting motion through video and infrared camera and integrate infrared camera for
+			temperature comparisons
+			Worked in group of 4 other students and was awarded with Outstanding Capstone project.
+			</p>
+  			<video   width="320" height="240" controls autoplay >
+			<source src="Projects/NonContactVitalSigns/Non-Contact Measurement of Vital Signs.mp4" type="video/mp4">
+				
+			Your browser does not support the video tag.
+		</video>
+		</div>
+    </div>
+  </div>
+
+	<div class="container right">
+    <div class="content">
+    	<button class="collapsible">
+    		<h2>HDTV Antenna</h2>
+    		<a href="Projects/HDTVAntenna/HDTVAntenna.jpg">
+    			<img src="Projects/HDTVAntenna/HDTVAntenna.jpg" alt="Image of HDTV Antenna" height="80" align="right">
+    		</a>
+    		<p>January 2019</p>
+    	</button>
+    	<div class="information">
+  			<p><abbr title= "High-Definition Television"> HDTV</abbr>
+			</p>
+  			<video   width="320" height="240" controls autoplay >
+			<source src="Projects/HDTVAntenna/HDTVAntenna.mp4" type="video/mp4">
+				
+			Your browser does not support the video tag.
+		</video>
+		</div>
+    </div>
+  </div>
+
+
+
+  <div class="container left">
+    <div class="content">
+    	<button class="collapsible">
+    		<h2>PID CONTROLLED LASER LIGHT SHOW</h2>
+    		<a href="Projects/LaserLightShow/laserlightshow.PNG">
+				<img src="Projects/LaserLightShow/laserlightshow.PNG" alt="Image of DC motors for light show" width="100" align="right">
+			</a>
+    		<p>May 2018</p>
+
+    	</button>
+    	<div class="information">
+  			<p>Design and built 2 Brushed DC Motors with optical encoders
+			Motors are controlled by PID controllers to move a laser to display an image of a Pacman’s ghost on the wall
+			Worked in group of 3 other students and was awarded with first place based on the entire year’s class projects</p>
+			<video width="320" height="240" controls autoplay >
+			<source src="Projects/LaserLightShow/laserlightshow.mov" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		</div>
+    </div>
+  </div>
+
+
+
+  <div class="container right">
+    <div class="content">
+    	<button class="collapsible">
+    		<h2>LAPAROSCOPY INTERFACE</h2>
+    		<a href="Projects/LaparoscopyInterface/LaparoUI.PNG">
+				<img src="Projects/LaparoscopyInterface/LaparoUI.PNG" alt="Image of DC motors for light show" width="100" align="right">
+			</a>
+			<p>May 2018</p>
+    	</button>
+    	<div class="information">
+  			<p>Designed interface for Laparoscopy training
+				Contain Video reference for appendectomy, step walkthrough, and final check box reminders, Rotatable and resizable video for easier camera
+				manipulation, Stopwatch to allow students to determine efficiency by knowing the amount of time to complete tasks, Randomized blood to
+				obstruction view for more realistic training, Screen capture for student evaluation and later reference, ability to draw shapes on video screen for
+				highlight areas of interest and Chat communications with professor and other students in distance learning environments.</p>
+  			<video width="320" height="240" controls autoplay >
+			<source src="LapoVid.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video>
+		</div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+</body>
+</html>

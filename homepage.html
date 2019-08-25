@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+
+  background-color: #98B4B8;
+
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("halong.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  font-size:24px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+.aboutMe{
+	text-align: left; 
+	left:100px;
+	margin-left: 2em;
+	color:white;
+	font-size:20px;
+
+}
+.interest-list{
+	 text-align: left;
+	 margin-left: 1em;
+	 color:white;
+
+}
+.WorkExperience{
+	text-align: left; 
+	left:100px;
+	margin-left: 2em;
+	color:white;
+	font-size:16px;
+	display:block;
+
+
+}
+.aboutMe img{
+	max-width:100%;
+max-height:100%;
+}
+.WorkExperience span {
+
+    display:block;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.jobs{
+	color:white;
+	font-size:16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+}
+#main-header{
+			text-align:center;
+			color:white;
+			padding:10px;
+		}
+#main-header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#main-header li {
+  float: left;
+}
+
+#main-header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#main-header li a:hover {
+    color: grey;
+}
+</style>
+</head>
+<body>
+
+
+
+	<div class="hero-image">
+		<div id="main-header"><ul>
+  <li><a class="active" href="homepage.html">Home</a></li>
+  <li><a href="jobs.html">Work Experience</a></li>
+  <li><a href="timeline.html">Projects</a></li>
+  <li><a href="Fonda Chau Resume.pdf" target="_blank">Resume</a></li>
+</ul>
+</div>
+		<div class="hero-text">
+
+			<h1 style="font-size:50px">I am Fonda Chau</h1>
+	    	<p>And I'm an Electrial Engineer</p>
+	    	<button type=submit class="btn btn-danger" onclick=" window.open('Fonda Chau Resume.pdf'); return true;"> Hire Me </button>
+	  	</div>
+	</div>
+
+	<br/>
+	<br/>
+
+	<div class="aboutMe">
+
+	    <h2>About Me</h2>
+	    <p> 
+	    I am a recent graduate from the University of British Columbia with a Bachelor in Electrical Engineering, Biomedical Option.
+	    I am passionate, determined, hardworking and take pride in my work.
+	    I am a creative thinker, and I strive to be a valued member on any team I am on.
+		</p>
+	    <p>My Interest are:</p>
+
+	    <div class="interest-list">
+		    <li>Robotics</li>
+		    <li>Systems and Control</li>
+		    <li>Image Processing</li>
+		    <li>Prototyping</li>
+		    <li>Antennas and Propagation</li>
+		    <li>FPGA</li>
+		    <li>Chance to learn more</li>
+
+		</div>
+		<p> Some of the cool things I build was...
+		<br/>
+
+		<a href="timeline.html"target="_blank">
+			<img class="center" src="Projects/all logos.png" alt="Previous Jobs">
+		</a>
+		</p>
+		<p> I have previously worked at ...
+		<a href="jobs.html"target="_blank">
+					<img class="center" src="Previous Jobs/all logos.png" alt="Previous Jobs">
+				</a>
+
+</p>
+</div>
+
+
+
+</body>
+</html>
