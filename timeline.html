@@ -2,42 +2,9 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stylesheet.css">
 <style>
-* {
-  box-sizing: border-box;
-}
 
-body {
-  background-color: #98B4B8;
-  font-family: Helvetica, sans-serif;
-}
-#main-header{
-			text-align:center;
-			color:white;
-			padding:10px;
-		}
-#main-header ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-#main-header li {
-  float: left;
-}
-
-#main-header li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-#main-header li a:hover {
-    color: grey;
-}
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
@@ -186,18 +153,19 @@ body {
 </style>
 </head>
 <body>
+<header>
+	<div id="main-header">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="jobs.html">Work Experience</a></li>
+      <li><a href="timeline.html">Projects</a></li>
+      <li><a href="Fonda Chau Resume.pdf"target="_blank">Resume</a></li>
+    </ul>
+  </div>
+</header>
 
-		<div id="main-header"><ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="jobs.html">Work Experience</a></li>
-  <li><a href="timeline.html">Projects</a></li>
-  <li><a href="Fonda Chau Resume.pdf"target="_blank">Resume</a></li>
-</ul>
-</div>
 
 <div class="timeline">
-
-
 
 	<div class="container left">
     <div class="content">
@@ -207,22 +175,20 @@ body {
     			<img src="Projects/NonContactVitalSigns/NoncontactvitalsignsWithUI.PNG" alt="Image of non contact mothed of measuring vital signs" height="80" align="right">
     		</a>
     		<p>May 2019</p>
+        <p>Capstone</p>
     	</button>
     	<div class="information">
-  			<p>A system involving a FMCW Radio, Video Camera, Infrared Camera to measure Respiratory Rate, Heart Rate and Body temperature.
-			System targeted to be placed in hospital waiting rooms with possible application to other settings.
-			Developed detecting respiratory rate and heart rate by detecting motion through video and infrared camera and integrate infrared camera for
-			temperature comparisons
-			Worked in group of 4 other students and was awarded with Outstanding Capstone project.
-			</p>
+        <p>A system involving a FMCW Radio, Video Camera, Infrared Camera to measure Respiratory Rate, Heart Rate and Body temperature.
+          System targeted to be placed in hospital waiting rooms with possible application to other settings.
+          Developed detecting respiratory rate and heart rate by detecting motion through video and infrared camera and integrate infrared camera for temperature comparisons.
+          Worked with 4 other students and was awarded with Outstanding Capstone project.
+        </p>
   			<video   width="320" height="240"  controls >
-			<source src="Projects/NonContactVitalSigns/Non-Contact Measurement of Vital Signs.mp4" type="video/mp4">
-				
-			Your browser does not support the video tag.
-		</video>
-		</div>
+          <source src="Projects/NonContactVitalSigns/Non-Contact Measurement of Vital Signs.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
     </div>
-  </div>
 
 	<div class="container right">
     <div class="content">
@@ -232,9 +198,12 @@ body {
     			<img src="Projects/HDTVAntenna/HDTVAntenna.jpg" alt="Image of HDTV Antenna" height="80" align="right">
     		</a>
     		<p>January 2019</p>
+        <p>Antenna and Propagation</p>
     	</button>
     	<div class="information">
-  			<p><abbr title= "High-Definition Television"> HDTV</abbr>
+  			<p>Mount Seymour has transmission towers that transmits TV stations. It transmitts in the <abbr title= "Ultra High Frequency">UHF </abbr> range.
+          For a class project, I worked with 3 other students to build a <abbr title= "High-Definition Television"> HDTV</abbr> antenna. 
+          It was able to pick up 7 clear channels that are being broadcasted from Mount Seymour.
 			</p>
   			<video   width="320" height="240"  controls >
 			<source src="Projects/HDTVAntenna/HDTVAntenna.mp4" type="video/mp4">
@@ -255,12 +224,13 @@ body {
 				<img src="Projects/LaserLightShow/laserlightshow.PNG" alt="Image of DC motors for light show" width="100" align="right">
 			</a>
     		<p>May 2018</p>
+        <p>Design Studios II</p>
 
     	</button>
     	<div class="information">
-  			<p>Design and built 2 Brushed DC Motors with optical encoders
-			Motors are controlled by PID controllers to move a laser to display an image of a Pacman’s ghost on the wall
-			Worked in group of 3 other students and was awarded with first place based on the entire year’s class projects</p>
+  			<p>Design and built 2 Brushed DC Motors with optical encoders.
+			Motors are controlled by PID controllers to move a laser to display an image of a Pacman’s ghost on the wall.
+			Worked with 3 other students and was awarded with first place based on the entire year’s class projects.</p>
 			<video width="320" height="240"  controls >
 			<source src="Projects/LaserLightShow/laserlightshow.mov" type="video/mp4">
 			Your browser does not support the video tag.
@@ -279,9 +249,10 @@ body {
 				<img src="Projects/LaparoscopyInterface/LaparoUI.PNG" alt="Image of DC motors for light show" width="100" align="right">
 			</a>
 			<p>May 2018</p>
+      <p>Biomedical Engineering Instrumentation</p>
     	</button>
     	<div class="information">
-  			<p>Designed interface for Laparoscopy training
+  			<p>Designed interface for Laparoscopy training.
 				Contain Video reference for appendectomy, step walkthrough, and final check box reminders, Rotatable and resizable video for easier camera
 				manipulation, Stopwatch to allow students to determine efficiency by knowing the amount of time to complete tasks, Randomized blood to
 				obstruction view for more realistic training, Screen capture for student evaluation and later reference, ability to draw shapes on video screen for
@@ -294,8 +265,105 @@ body {
     </div>
   </div>
 
-</div>
 
+  <div class="container left">
+    <div class="content">
+      <button class="collapsible">
+        <h2>SIMPLE IPOD</h2>
+        <a href="https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&No=836">
+        <img src="https://www.terasic.com.tw/attachment/archive/870/image/DE1-SoC_top45_01.jpg" alt="Picture of DE1 SOC" width="100" align="right">
+      </a>
+      <p>Nov 2017</p>
+      <p>Digital Systems Design</p>
+      </button>
+      <div class="information">
+        <p>Built a Simple IPod  in Verilog with embedded picoblaze in assembly on an Altera DE1-SOC board. Reads from the memory with a Finite State Machine and plays the song on speaks. Controls speed, direction and resets song from the beginning with a keyboard. Display the volume of the song being played with a set of LEDs. </p>
+    </div>
+    </div>
+  </div>
+
+
+  <div class="container right">
+    <div class="content">
+      <button class="collapsible">
+        <h2>Magnetic Field Robot</h2>
+        <a href="Projects/MagneticFieldControlledRobot/MagneticRobot.JPG">
+        <img src="Projects/MagneticFieldControlledRobot/MagneticRobot.JPG" alt="BreadBoard of reciever" width="100" align="right">
+      </a>
+      <p>April 2016</p>
+      <p>Design Studios I</p>
+      </button>
+      <div class="information">
+        <p>Built a robot that is controlled by a Nintendo WII Nunchuck,and using inductor to transmit and receive magnetic signals designed with a group of six. The robot moves in a 360 degree direction and can shoot rubber bands from a shooter controlled buy a servo. 
+        </p>
+
+    </div>
+    </div>
+  </div>
+
+  <div class="container left">
+    <div class="content">
+      <button class="collapsible">
+        <h2>Heart Rate Monitor</h2>
+        <a href="Projects/HeartRateMonitor/HeartRateMonitor.JPG">
+        <img src="Projects/HeartRateMonitor/HeartRateMonitor.JPG" alt="breadboard of heart rate monitor" width="100" align="right">
+      </a>
+      <p>March 2016</p>
+      <p>Design Studios I</p>
+      </button>
+      <div class="information">
+        <p>Built a Heart Rate Monitor that was assembled on a bread board using a C8051F38X microcontroller, Phototransistors, LEDs and OpAmps.
+          The heart rate monitor can display the pulse and Beats Per Minute, and allow user to set a notification if a specific heart rate is reached. </p>
+        <video width="320" height="240" controls  >
+      <source src="Projects/HeartRateMonitor/HeartRateMonitor.MOV" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+    </div>
+    </div>
+  </div>
+
+
+    <div class="container right">
+    <div class="content">
+      <button class="collapsible">
+        <h2>Reflow Oven</h2>
+        <a href="Projects/ReflowOven/ReflowOvenFlowChart.png">
+        <img src="Projects/ReflowOven/ReflowOvenFlowChart.png" alt="Image of DC motors for light show" width="100" align="right">
+      </a>
+      <p>March 2016</p>
+      <p>Design Studios I</p>
+      </button>
+      <div class="information">
+        <p>Built a controller for a toaster oven to maintain the different temperature state for the reflow process on surface mount PCB components. Temperature is regulated with an  AT89LP52 microcontroller which will activate a solid state replay based on the desired and the input temperature from a thermocouple. The system displays reflow profile selection, state, run time, and current temperature. They system is outputing to a laptop which will plot the temperature. The system also has a servo motor that will open the door at the appropiate time to accellerate cooling. The laptop also will send an email to indicate the process is complete. </p>
+        <video width="320" height="240" controls  >
+      <source src="Projects/ReflowOven/ReflowOven.MOV" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+    </div>
+    </div>
+  </div>
+
+
+  <div class="container left">
+    <div class="content">
+      <button class="collapsible">
+        <h2>Alarm Clock</h2>
+        <a href="Projects/AlarmClock/AlarmClock.JPG">
+        <img src="Projects/AlarmClock/AlarmClock.JPG" alt="Image of bread board of alarm clock" width="100" align="right">
+      </a>
+      <p>January 2016</p>
+      <p>Design Studios I</p>
+      </button>
+      <div class="information">
+        <p>Built an alarm clock Wiring of breadboard and soldering were require to connect the AT89LP52, speaker, push buttons and LCD screen. Using interrupts in assembly, the alarm clock is able to set the time and alarm, and play a song at the corresponding alarm time.  To turn off the alarm, one must press the corresponding arrow buttons to the arrows appearing on the screen, failing to do so, will cause the alarm to snooze and ring again in 5 mins.</p>
+        <video width="320" height="240" controls  >
+      <source src="Projects/AlarmClock/AlarmClock.MOV" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+    </div>
+    </div>
+  </div>
+</div>
 
 
 <script>
